@@ -32,7 +32,7 @@ urlpatterns = [
         name='api-docs',
     ),
     path('api/user/', include('user.urls')),
-    path('api/recipe/', include('recipe.urls')),
+    path('api/restaurant/', include('restaurant.urls')),
     path('accounts/', include("django.contrib.auth.urls")),
     #path('', TemplateView.as_view(template_name='home.html'), name="home"),
     path('', app_views.home, name="home"),

@@ -1,6 +1,6 @@
 from django.shortcuts import render
 import requests
-from core.models import Recipe, Tag, Ingredient
+from core.models import Restaurant, Tag
 
 # def home(request):
 #     recipes = Recipe.objects.all()
@@ -14,7 +14,7 @@ from core.models import Recipe, Tag, Ingredient
 
 def home(request):
     token = request.user.auth_token.key if hasattr(request.user, 'auth_token') else None
-    api_url = "http://127.0.0.1:8000/api/recipe/recipes"
+    api_url = "http://127.0.0.1:8000/api/restaurant/restaurants/"
 
     headers = {'Authorization': f"Token {token}"}
     response = requests.get(api_url, headers=headers)
