@@ -1,0 +1,11 @@
+.btn-custom-logout {
+    color: white !important;
+    border: 1px solid !important;
+    font-size: 0.8em !important;
+}
+
+.btn-custom-logout:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+    text-decoration: none !important;
+}
